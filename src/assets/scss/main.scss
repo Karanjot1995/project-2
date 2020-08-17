@@ -1,0 +1,85 @@
+.App{
+    overflow-x: hidden;
+}    
+.collapsible {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  z-index: 2;
+}
+#nav-toggler {
+  background: transparent;
+  border: none;
+  color:#033fff;
+  svg{
+    color:#033fff;
+  }
+  &:focus {
+    outline: none;
+  }
+
+}
+
+.open-close {
+  left: 150px;
+  z-index:1000;
+  top: 5px !important;
+  position: fixed !important;
+}
+.fa-times {
+  color: #000;
+}
+#sidebar{
+  background: white;
+  border-right: 1px solid #e0e0e0;
+}
+
+// #contact-us{
+//   margin-top: 50px;
+// }
+.form-data{
+  margin-top: 200px;
+  font-size: 30px;
+  text-align: center;
+}
+  // .ftco_navbar {
+  //    .nav-item > .nav-link{
+  //       color:#000!important;
+
+  //    }
+  // }
+
+
+@media (max-width:992px){
+  .ftco_navbar {
+    .navbar-brand{
+      margin-left:20px
+    }
+    .navbar-nav{
+      display: flex;
+      flex-direction: row;
+      .nav-item > .nav-link{
+        padding-bottom:0!important;
+        padding-right: 20px!important;
+        padding-top:20px;
+      }
+    }
+    
+  }
+  #contact-us{
+    margin-top: 0!important;
+    padding-top:  0!important;
+  }
+ .nav-container{
+   padding-top:30px;
+   overflow-y: scroll;
+    .nav-link{
+    display: flex;
+    width:150px;
+    margin-left:40px;
+ }
+ }
+}
